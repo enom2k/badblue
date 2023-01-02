@@ -1,0 +1,114 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  margin: 0 auto;
+  width: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.top-bounce-wrap{
+  position: relative;
+  margin: 0 auto;
+}
+.top-bounce{
+  position: absolute;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; 
+  left: 4%;
+}
+.top-bounce img{
+  width: 70%;
+}
+.video-wrap {
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+.mv {
+  width: 80%;
+  margin: 0 auto;
+}
+.scroll-wrap {
+  margin: 0;
+}
+.list-scroll {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.list-scroll .up-on-scroll {
+  transition: transform 1s, opacity 1s;
+}
+.img-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.img-wrap .image {
+  object-fit: contain;
+  width: 100%;
+}
+.pro_txt_wrap1 {
+  position: absolute;
+  margin-top: 42%;
+  left: 6%;
+}
+.pro_txt_01 {
+  position: relative;
+}
+.pro_txt_02 {
+  position: relative;
+  margin-top: 10%;
+}
+.pro_txt_wrap2 {
+  position: absolute;
+  margin-top: 40%;
+  right: 11%;
+  width: auto;
+}
+.pro_txt_wrap3 {
+  position: absolute;
+  margin-top: 20%;
+  right: 13%;
+}
+.pro_txt_wrap4 {
+  position: absolute;
+  margin-top: 56%;
+  right: 23%;
+}
+.pro_txt_wrap5 {
+  position: absolute;
+  margin-top: 69%;
+  left: 40%;
+}
+
+
+@keyframes myanim{
+  0% {left: 0px; top: 0px;}
+  50% {left: 200px; top: 0px;}
+  100% {left: 0px; top: 0px;}
+}
+
+@keyframes bounce{
+  0%, 100%{
+    bottom: 50px;
+    animation-timing-function: ease-out;
+  }
+
+  50%{
+    bottom: 150px;
+    animation-timing-function: ease-in;
+  }
+}
